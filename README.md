@@ -61,10 +61,3 @@ Once the build completes, the application components will be accessible at:
 ```
 
 ---
-
-## 🔧 Production Deployment
-
-To prepare this application for production:
-1. Update production variables inside your `.env` files (e.g., disable `RELOAD` modes, change secret keys).
-2. Configure a reverse proxy like Nginx or Traefik to route traffic and handle SSL certificates.
-3. Build using production compose profiles if applicable.
