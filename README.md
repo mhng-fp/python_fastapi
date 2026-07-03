@@ -14,14 +14,14 @@ A modern, high-performance web application skeleton utilizing FastAPI for a robu
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com](https://github.com/mhng-fp/python_fastapi.git)
+git clone https://github.com/mhng-fp/python_fastapi.git
 ```
 
 ### 2. To run without docker
 
 The frontend and backend application components will be accessible at:
 *   **Frontend (Vite + React):** `npm run dev` at frontend folder. Access `http://localhost:5173`.
-*   **Backend API:** `uvicorn main:app --host 0.0.0.0 --port 8000` at app folder. Access `http://localhost:8000/hello`.
+*   **Backend API:** `uvicorn main:app --host 0.0.0.0 --port 8080` at app folder. Access `http://localhost:8080/hello`.
 
 ### 2. To kill processes
 
