@@ -52,7 +52,7 @@ The frontend and backend application components will be accessible at:
 
        | 🖥️ YOUR MAC HOST MACHINE (macOS)                                                |
        |                                                                                 |
-       |  📁 Project Folder: /python_fastapi/                    |
+       |  📁 Project Folder: /python_fastapi/                                            |
        |  🌐 Web Browser   : Opens http://localhost:5173  (Loads Frontend App UI)        |
        |                     Triggers fetch('http://localhost:8080/hello')               |
        +---------------------------------------------------------------------------------+
@@ -63,18 +63,18 @@ The frontend and backend application components will be accessible at:
                                     🐳 DOCKER DESKTOP VIRTUAL MACHINE
 ===================================================================================================
 │                                                                                                 │
-│  ┌──────────────────────────────────────────┐    ┌──────────────────────────────────────────┐  │
-│  │ 📦 CONTAINER: react-frontend            │    │ 📦 CONTAINER: fastapi-backend            │  │
-│  ├──────────────────────────────────────────┤    ├──────────────────────────────────────────┤  │
-│  │ • OS: Linux (Node 20-alpine)            │    │ • OS: Linux (Python 3.14)                │  │
-│  │ • Network Port: 5173                    │    │ • Network Port: 80                       │  │
-│  │ • Bound to Mac: http://localhost:5173    │    │ • Bound to Mac: http://localhost:8080    │  │
-│  ├──────────────────────────────────────────┤    ├──────────────────────────────────────────┤  │
-│  │                                          │    │                                          │  │
-│  │  / (Container Root)                      │    │  / (Container Root)                      │  │
-│  │  └── 📂 app/              [WORKDIR]      │    │  └── 📂 code/             [WORKDIR]      │  │
-│  │      ├── 📂 node_modules/ ──────────┐   │    │      ├── 📄 requirements.txt              │  │
-│  │      │   └── [Compiled Packages]    │   │    │      │                                    │  │
+│  ┌──────────────────────────────────────────┐    ┌──────────────────────────────────────────┐   │
+│  │ 📦 CONTAINER: react-frontend             │    │ 📦 CONTAINER: fastapi-backend           │    │
+│  ├──────────────────────────────────────────┤    ├──────────────────────────────────────────┤   │
+│  │ • OS: Linux (Node 20-alpine)            │    │ • OS: Linux (Python 3.14)                │    │
+│  │ • Network Port: 5173                    │    │ • Network Port: 80                       │    │
+│  │ • Bound to Mac: http://localhost:5173    │    │ • Bound to Mac: http://localhost:8080    │   │
+│  ├──────────────────────────────────────────┤    ├──────────────────────────────────────────┤   │
+│  │                                          │    │                                          │   │
+│  │  / (Container Root)                      │    │  / (Container Root)                      │   │
+│  │  └── 📂 app/              [WORKDIR]      │    │  └── 📂 code/             [WORKDIR]      │   │
+│  │      ├── 📂 node_modules/ ──────────┐   │    │      ├── 📄 requirements.txt              │   │
+│  │      │   └── [Compiled Packages]    │   │    │      │                                    │   │
 │  │      │   (Isolated in Docker Vol) ◄─┘   │    │      └── 📂 app/      ◄────────────────┐  │
 │  │      │                                  │    │          ├── 📄 main.py                │  │
 │  │      ├── 📄 package.json                │    │          └── 📄 [Other code files...]  │  │
@@ -94,6 +94,8 @@ The frontend and backend application components will be accessible at:
                   | 📁 LOCAL MAC FOLDER:          |                 | 📁 LOCAL MAC FOLDER:    |
                   |    ./frontend/src/            |                 |    ./app/               |
                   +───────────────────────────────+                 +─────────────────────────+
+
+
 ```
 
 ---
