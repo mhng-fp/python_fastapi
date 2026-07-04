@@ -14,7 +14,7 @@ This project uses a Python FastAPI - Vite - React architecture, utilizing FastAP
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/mhng-fp/python_fastapi.git
+[git clone https://github.com/mhng-fp/python_fastapi.git](https://github.com/mhng-fp/webApp_fastAPI.git)
 ```
 
 ### 2. To run without docker
